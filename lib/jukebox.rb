@@ -46,6 +46,7 @@ def run(songs)
   userCommand = gets.chomp
 
   while userCommand != 'exit'
+    
     case userCommand
     when 'list'
       puts list(songs)
