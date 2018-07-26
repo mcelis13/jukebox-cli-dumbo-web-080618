@@ -33,6 +33,7 @@ def play(songs)
   if user_input.to_i == Fixnum
     int = user_input.to_i
     index = int - 1
+    binding.pry
     if index <= songs.size
     puts "Playing #{songs[index]}"
     end
