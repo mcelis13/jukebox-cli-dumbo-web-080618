@@ -31,6 +31,7 @@ def play(songs)
   user_input = gets.chomp
 
   user_input.to_i == String
+  binding.pry
   if user_input.to_i != String
     user_input.to_i
     int = user_input.to_i
