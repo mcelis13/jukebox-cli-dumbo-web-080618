@@ -37,7 +37,7 @@ def play(songs)
     puts "Playing #{songs[index]}"
     end
   else
-    user_input
+    user_input.to_s
     binging.pry
     if songs.include?(user_input)
       puts "Playing #{user_input}"
