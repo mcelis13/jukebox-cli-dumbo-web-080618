@@ -31,7 +31,6 @@ def play(songs)
   user_input = gets.chomp
 
   if user_input.to_i == Fixnum
-    binding.pry
     int = user_input.to_i
     index = int - 1
     if index <= songs.size
