@@ -33,19 +33,18 @@ def play(songs)
   user_input.to_i == String
   binding.pry
   if user_input.to_i == Fixnum
-    user_input.to_s
-      if songs.include?(user_input)
-        puts "Playing #{user_input}"
-      end
+    int = user_input.to_i
+    index = int - 1
+    if index <= songs.length
+    puts "Playing #{songs[index]}"
+    end
+
+
+
   elsif user_input.to_i == String
     puts "Invalid input, please try again"
   end
-  user_input.to_i
-  int = user_input.to_i
-  index = int - 1
-  if index <= songs.size
-  puts "Playing #{songs[index]}"
-  end
+
 
 
 
