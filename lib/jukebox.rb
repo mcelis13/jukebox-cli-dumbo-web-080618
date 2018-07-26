@@ -32,6 +32,7 @@ def play(songs)
 
   if user_input.class == "String" && songs.include?(user_input)
     puts "Playing #{user_input}"
+    binding.pry
   end
 
   if user_input.to_i
