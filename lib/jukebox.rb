@@ -45,12 +45,11 @@ def run
   puts "Please enter a command:"
   userCommand = gets.chomp
 
-  if userCommand != 'exit'
     case userCommand
     when 'list'
     when 'play'
     when 'help'
-
+    when 'exit'
     end
   end
 end
