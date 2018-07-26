@@ -59,5 +59,5 @@ def run(songs)
     userCommand = gets.chomp
   end # end of while loop
 
-exit_jukebox
+  exit_jukebox
 end #end of function
