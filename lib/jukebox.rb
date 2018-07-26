@@ -48,7 +48,7 @@ def run
     case userCommand
     when 'list'
     when 'play'
-      play
+      play(songs)
     when 'help'
       help
     when 'exit'
