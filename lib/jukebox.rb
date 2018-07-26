@@ -18,7 +18,6 @@ def help
   - list    : displays the list of songs you can play
   - play    : lets you choose a song to play
   - exit    : exits the program"
-  binding.pry
 end
 
 def list(songs)
