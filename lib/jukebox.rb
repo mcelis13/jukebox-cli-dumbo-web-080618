@@ -32,6 +32,7 @@ def play(songs)
   if user_input.to_i
     int = user_input.to_i
     puts "Playing #{songs[int + 1]}"
+    binding.pry
   end
   puts "Invalid input, please try again"
 end
