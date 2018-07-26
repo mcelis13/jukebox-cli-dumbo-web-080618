@@ -39,11 +39,11 @@ def play(songs)
   end
 
   if user_input.class == String
-    binding.pry
     if songs.include?(user_input)
       puts "Playing #{user_input}"
     end
   end
+
   puts "Invalid input, please try again"
 end
 
