@@ -30,7 +30,7 @@ def play(songs)
   puts 'Please enter a song name or number:'
   user_input = gets.chomp
   if user_input.to_i
-    puts "Playing #{songs[user_input -1]}"
+    puts user_input
   end
   puts "Invalid input, please try again"
 end
