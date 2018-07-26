@@ -37,6 +37,7 @@ def play(songs)
     puts "Playing #{songs[index]}"
     end
   elsif user_input == String
+    binding.pry
     if songs.include?(user_input)
       puts "Playing #{user_input}"
     end
