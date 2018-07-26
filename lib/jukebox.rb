@@ -30,25 +30,17 @@ def play(songs)
   puts 'Please enter a song name or number:'
   user_input = gets.chomp
 
-  user_input.to_i == String
-  binding.pry
   if user_input.to_i == Fixnum
     int = user_input.to_i
     index = int - 1
     if index <= songs.length
     puts "Playing #{songs[index]}"
     end
-
-
-
-  elsif user_input.to_i == String
+  elsif user_input.to_i != Fixnum && songs.include?(user_input)
+    puts "Playing #{user_input}"
+  else
     puts "Invalid input, please try again"
   end
-
-
-
-
-
 
 end
 
