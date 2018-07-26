@@ -50,7 +50,7 @@ def run
     when 'play'
       play
     when 'help'
-
+      help
     when 'exit'
       exit_jukebox
     end #end of case control flow
