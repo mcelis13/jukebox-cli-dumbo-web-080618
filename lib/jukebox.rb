@@ -29,11 +29,11 @@ end
 def play(songs)
   puts 'Please enter a song name or number:'
   user_input = gets.chomp
-
+  binding.pry
   if user_input.class == "String" && songs.include?(user_input)
     puts "Playing #{user_input}"
-    binding.pry
-  end 
+  end
+  
   if user_input.class != "String"
     user_input.to_i
     int = user_input.to_i
