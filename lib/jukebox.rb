@@ -30,8 +30,8 @@ def play(songs)
   puts 'Please enter a song name or number:'
   user_input = gets.chomp
   if user_input.class == 'String'
-    user_input
     binding.pry
+    user_input
   end
   puts "Invalid input, please try again"
 end
@@ -46,7 +46,7 @@ def run(songs)
   userCommand = gets.chomp
 
   while userCommand != 'exit'
-    
+
     case userCommand
     when 'list'
       puts list(songs)
