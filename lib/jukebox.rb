@@ -39,6 +39,7 @@ def play(songs)
     index = int - 1
     if index <= songs.size
     puts "Playing #{songs[index]}"
+    return 
     end
   end
 
