@@ -38,7 +38,7 @@ def play(songs)
     end
   else
     user_input.to_s
-    binging.pry
+    binding.pry
     if songs.include?(user_input)
       puts "Playing #{user_input}"
     end
