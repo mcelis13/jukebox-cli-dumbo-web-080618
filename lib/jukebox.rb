@@ -31,7 +31,7 @@ def play(songs)
   user_input = gets.chomp
 
   if user_input.class == "String" && songs.include?(user_input)
-  puts "Playing #{user_input}"
+    puts "Playing #{user_input}"
   end
 
   if user_input.to_i
@@ -41,7 +41,7 @@ def play(songs)
     puts "Playing #{songs[index]}"
     end
   end
-  
+
   puts "Invalid input, please try again"
 end
 
