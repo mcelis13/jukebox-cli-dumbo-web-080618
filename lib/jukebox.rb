@@ -30,10 +30,9 @@ def play(songs)
   puts 'Please enter a song name or number:'
   user_input = gets.chomp
 
-  if user_input.to_i == Fixnum
+  if user_input == Fixnum
     int = user_input.to_i
     index = int - 1
-    binding.pry
     if index <= songs.size
     puts "Playing #{songs[index]}"
     end
