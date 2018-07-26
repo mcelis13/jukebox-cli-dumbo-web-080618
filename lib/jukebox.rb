@@ -38,8 +38,9 @@ def play(songs)
     end
   elsif user_input.to_i != Fixnum
     user_input.to_s
-    puts "Playing #{user_input}"
-    binding.pry
+    if songs.include?(user_input)
+      puts "Playing #{user_input}"
+    end
   else
     puts "Invalid input, please try again"
   end
