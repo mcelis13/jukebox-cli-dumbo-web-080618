@@ -51,5 +51,5 @@ def run
     when 'help'
     when 'exit'
     end
-  end
-end
+
+end #end of function
