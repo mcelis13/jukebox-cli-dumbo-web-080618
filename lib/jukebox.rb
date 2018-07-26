@@ -32,12 +32,12 @@ def play(songs)
 
   user_input.to_i == String
   binding.pry
-  if user_input.to_i == false
+  if !(user_input.to_i == String)
     user_input.to_s
       if songs.include?(user_input)
         puts "Playing #{user_input}"
       end
-  else
+  elsif user_input.to_i == true
     puts "Invalid input, please try again"
   end
   user_input.to_i
