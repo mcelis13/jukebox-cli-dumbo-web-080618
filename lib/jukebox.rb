@@ -50,6 +50,6 @@ def run
     when 'play'
     when 'help'
     when 'exit'
-    end
+    end #end of case control flow
 
 end #end of function
