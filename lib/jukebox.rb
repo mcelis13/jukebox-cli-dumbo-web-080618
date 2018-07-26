@@ -32,7 +32,7 @@ def play(songs)
 
   user_input_toNum = user_input.to_i
   binding.pry
-  if user_input.to_i == Fixnum
+  if user_input.to_i.is_a? Numeric
     int = user_input.to_i
     index = int - 1
     if index <= songs.size
