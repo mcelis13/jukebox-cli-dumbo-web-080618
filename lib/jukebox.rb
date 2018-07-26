@@ -30,8 +30,6 @@ def play(songs)
   puts 'Please enter a song name or number:'
   user_input = gets.chomp
 
-  user_input_toNum = user_input.to_i
-  binding.pry
   if user_input.to_i.is_a? Numeric
     int = user_input.to_i
     index = int - 1
