@@ -31,8 +31,9 @@ def play(songs)
   user_input = gets.chomp
   if user_input.to_i
     int = user_input.to_i
-    puts "Playing #{songs[int + 1]}"
-    binding.pry
+
+    puts "Playing #{songs[int - 1]}"
+  else
   end
   puts "Invalid input, please try again"
 end
