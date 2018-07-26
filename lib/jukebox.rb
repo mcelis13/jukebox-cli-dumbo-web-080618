@@ -34,7 +34,6 @@ def play(songs)
   puts "Playing #{user_input}"
   end
 
-
   if user_input.to_i
     int = user_input.to_i
     index = int - 1
@@ -42,6 +41,7 @@ def play(songs)
     puts "Playing #{songs[index]}"
     end
   end
+  
   puts "Invalid input, please try again"
 end
 
