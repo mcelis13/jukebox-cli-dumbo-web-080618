@@ -48,7 +48,9 @@ def run
     case userCommand
     when 'list'
     when 'play'
+      play
     when 'help'
+
     when 'exit'
       exit_jukebox
     end #end of case control flow
