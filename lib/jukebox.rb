@@ -29,10 +29,7 @@ end
 def play(songs)
   puts 'Please enter a song name or number:'
   user_input = gets.chomp
-  if user_input.class == 'String'
-    binding.pry
-    user_input
-  end
+  binding.pry
   puts "Invalid input, please try again"
 end
 
