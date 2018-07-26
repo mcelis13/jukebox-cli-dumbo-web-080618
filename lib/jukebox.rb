@@ -37,7 +37,6 @@ def play(songs)
     puts "Playing #{songs[index]}"
     end
   elsif user_input == String
-    user_input.to_s
     if songs.include?(user_input)
       puts "Playing #{user_input}"
     end
