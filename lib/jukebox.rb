@@ -30,7 +30,7 @@ def play(songs)
   puts 'Please enter a song name or number:'
   user_input = gets.chomp
 
-
+  user_input.to_i == String
   if user_input.to_i != String
     user_input.to_i
     int = user_input.to_i
