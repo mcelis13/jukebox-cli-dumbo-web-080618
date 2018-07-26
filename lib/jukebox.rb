@@ -31,6 +31,7 @@ def play(songs)
   user_input = gets.chomp
   if user_input.to_i
     puts user_input
+    binding.pry
   end
   puts "Invalid input, please try again"
 end
