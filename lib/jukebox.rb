@@ -36,13 +36,12 @@ def play(songs)
     if index <= songs.size
     puts "Playing #{songs[index]}"
     end
-  else
+  elsif user_input.to_s.class == String
     binding.pry
     if songs.include?(user_input)
       puts "Playing #{user_input}"
     end
   end
-
   puts "Invalid input, please try again"
 end
 
