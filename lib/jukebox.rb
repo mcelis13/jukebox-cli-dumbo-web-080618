@@ -44,4 +44,13 @@ def run
   help
   puts "Please enter a command:"
   userCommand = gets.chomp
+
+  if userCommand != 'exit'
+    case userCommand
+    when 'list'
+    when 'play'
+    when 'help'
+
+    end
+  end
 end
