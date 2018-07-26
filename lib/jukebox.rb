@@ -32,7 +32,7 @@ def play(songs)
 
   user_input.to_i == String
   binding.pry
-  if !(user_input.to_i == String)
+  if user_input.to_i == Fixnum
     user_input.to_s
       if songs.include?(user_input)
         puts "Playing #{user_input}"
