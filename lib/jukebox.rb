@@ -40,7 +40,7 @@ def exit_jukebox
   puts "Goodbye"
 end
 
-def run
+def run(song)
   help
   puts "Please enter a command:"
   userCommand = gets.chomp
