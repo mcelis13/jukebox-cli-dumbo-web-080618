@@ -36,7 +36,8 @@ def play(songs)
     if index <= songs.length
     puts "Playing #{songs[index]}"
     end
-  elsif user_input.to_i != Fixnum && songs.include?(user_input)
+  elsif user_input.to_i != Fixnum
+    user_input.to_s
     puts "Playing #{user_input}"
     binding.pry
   else
