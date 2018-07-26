@@ -36,7 +36,7 @@ def play(songs)
     if index <= songs.size
     puts "Playing #{songs[index]}"
     end
-  elsif user_input.to_i != Fixnum
+  elsif !(user_input.to_i.is_a? Numeric)
     user_input.to_s
     if songs.include?(user_input)
       puts "Playing #{user_input}"
