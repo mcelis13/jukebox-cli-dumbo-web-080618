@@ -45,6 +45,7 @@ def run(songs)
   puts "Please enter a command:"
   userCommand = gets.chomp
 
+  while userCommand != 'exit'
     case userCommand
     when 'list'
       puts list(songs)
@@ -52,8 +53,10 @@ def run(songs)
       play(songs)
     when 'help'
       help
-    when 'exit'
-      exit_jukebox
     end #end of case control flow
+
+    puts "Please enter a command:"
+    userCommand = gets.chomp
+  end # end of while loop
 
 end #end of function
