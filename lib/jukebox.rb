@@ -39,11 +39,10 @@ def play(songs)
     index = int - 1
     if index <= songs.size
     puts "Playing #{songs[index]}"
-    return 
     end
+  else
+    puts "Invalid input, please try again"
   end
-
-  puts "Invalid input, please try again"
 end
 
 def exit_jukebox
